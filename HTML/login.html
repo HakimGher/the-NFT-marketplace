@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <script src="https://kit.fontawesome.com/b6b9586b26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JS/script.js" defer></script>
+  </head>
+  <body>
+    <div id="sign_in">
+      <form>
+        <span>Login</span>
+        <div id="field">
+          <label><i class="fas fa-envelope-open"></i></label>
+          <input type="email" placeholder="Email" required />
+        </div>
+
+        <div id="field">
+          <label><i class="fas fa-lock"></i></label>
+          <input type="password" placeholder="Mot de passe" required />
+        </div>
+
+        <div id="field">
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+
+      <p> Vous n'avez pas un compte?
+        <button onclick="signUp()"><a>Register</a></button>
+      </p>
+    </div>
+    <div id="sign_up">
+      <form>
+        <span>Register</span>
+        <div id="field">
+          <label><i class="fas fa-user"></i></label>
+          <input type="text" placeholder="Nom utilisateur" required />
+        </div>
+
+        <div id="field">
+          <label><i class="fas fa-envelope-open"></i></label>
+          <input type="email" placeholder="Email" required />
+        </div>
+
+        <div id="field">
+          <label><i class="fas fa-lock"></i></label>
+          <input type="password" placeholder="Mot de passe" required />
+        </div>
+
+        <div id="field">
+          <label><i class="fas fa-lock"></i></label>
+          <input type="password" placeholder="Confirmer Mot de passe" required />
+        </div>
+
+        <div id="field">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+
+      <p> J'ai déja un compte?
+        <button onclick="signIn()"><a>Login</a></button>
+      </p>
+    </div>
+
+  </body>
+</html>

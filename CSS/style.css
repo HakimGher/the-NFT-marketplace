@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  min-block-size: 100vh;
+  background: #000;
+  color: #606468;
+}
+
+#sign_in,
+#sign_up {
+  inline-size: 90%;
+  max-inline-size: 23rem;
+  margin-inline: auto;
+}
+
+span {
+  color: #eee;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+form {
+  display: grid;
+  gap: 0.875rem;
+}
+#field {
+  display: flex;
+}
+
+label,
+input {
+  border-radius: 0.35rem;
+  padding: 1rem;
+  outline: 0;
+}
+
+label {
+  background-color: #363b41;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+input {
+  font-family: 'Nunito', sans-serif;
+  border: 0;
+  transition: background-color 0.3s;
+  inline-size: 100%;
+  color: #eee;
+  vertical-align: center;
+}
+
+input::placeholder {
+  font-family: 'Nunito', sans-serif;
+  vertical-align: center;
+}
+
+input:not(input[type="submit"]) {
+  background-color: #3b4148;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+input:not(input[type="submit"]):hover,
+input:not(input[type="submit"]):focus {
+  background-color: #434a52;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #eee;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.2;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  background-color: #0097e6;
+  color: #eee;
+}
+
+p {
+  margin-block: 1.5rem;
+  text-align: center;
+}
+button {
+  background: transparent;
+  border: none;
+}
+
+a {
+  cursor: pointer;
+  color: #eee;
+  outline: 0;
+  text-decoration: none;
+  padding: 0 0.3rem;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+#sign_up {
+  display: none;
+}

@@ -117,6 +117,21 @@ a:hover {
   text-decoration: underline;
 }
 
-#sign_up {
-  display: none;
+.error {
+  width: 100%; 
+  margin: 0px auto;
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  width: 100%; 
+  margin: 0px auto;
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  border-radius: 5px; 
+  text-align: center;
 }

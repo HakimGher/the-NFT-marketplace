@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif; 
+}
+
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+background-color: black;
+}
+.about{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top: 100px;
+}
+.contenu{
+    float: left;
+    width: 55%;
+}
+
+
+.contenu .titre {
+    font-size: 37px;
+    color: #0097e6;
+}
+
+.contenu .text h3{
+color:white;
+font-size: 21px;
+margin-top: 25px;
+}
+
+.contenu .text p{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1;
+color: white;
+}
+.contenu .social{
+    margin: 50px 50px;
+}
+
+
+
+.contenu .social i{
+    color: #0097e6;
+    padding: 0 10px;
+    font-size: 30px;
+}
+.contenu .social i:hover{
+    color:white;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and
+     (max-width:991px) {
+
+.about{
+    width: 80%;
+
+
+    display: block;
+    margin: auto;
+padding-top: 40px;
+
+}
+.contenu{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+.contenu .titre{
+    text-align: center;
+    font-size: 40px;
+}
+.contenu .social{
+text-align: center;
+}
+
+.image-section{
+    float: none;
+    width: 100%;
+}
+.image-section img{
+width: 100%;
+height: auto;
+
+}
+
+
+}
+
+
+  
+
+  

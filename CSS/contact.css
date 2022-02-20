@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+font-family:'Nunito', sans-serif;
+box-sizing: border-box;
+
+}
+
+body{
+
+background:     linear-gradient( 90deg, #000000 0%, #000000 30%,#0097e6 0%,#0097e6 100% )
+;
+}
+.contactus{
+    width: 100%;
+    position: relative;
+    padding: 24px 100px;
+}
+.contactus .title{
+
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 155%;
+
+} 
+.contactus .title h3{
+    color:#000000;
+
+}  
+.contact{
+    padding: 30px;
+    background:#fff;
+    
+}
+.box{
+    margin-top: 20px;
+    display: grid;
+    position: relative;
+    grid-gap: 20px ;
+    grid-template-columns: 3FR 1FR  ;
+    grid-template-rows:  4FR 2FR ;
+    grid-template-areas: "form info "
+    "form mapp";
+    
+
+}
+.form{
+    grid-area: form ;
+}
+.info{
+    grid-area: info;
+}
+
+.mapp{
+    grid-area:mapp ;
+}
+.contact h3{
+    font-size: 25px; ;
+    color:black;
+    margin-bottom: 10px;
+}
+/*formulaire */
+.formbox{
+    width: 100%;
+    position: relative;
+
+}
+.formbox .row{
+
+    display: flex;
+    gap: 20px;
+}
+.entrebox{
+    display: flex;
+flex-direction: column;
+width: 50%;
+margin-bottom: 12px;
+}
+.formbox .rows .entrebox{
+    width: 100%;
+
+}
+.entrebox span{
+    
+    color: #0097e6;
+margin-top: 4px;
+    margin-bottom: 7px;
+}
+.entrebox input{
+    
+    font-size :16px; 
+}
+.entrebox textarea{
+ margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.entrebox input[type=submit]
+  {
+    color: #fff;
+    background: #000000;
+width: 92px;
+margin-bottom: 12px ;
+cursor: pointer;
+font-size: 16px;
+}
+ /*information*/
+.info h3{
+    color: #000000;
+
+
+
+}
+.info .infobox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+}
+.info .infobox div span{
+min-width: 40px ;
+display: flex;
+justify-content: center;
+font-size: 1,5em;
+border-radius: 50%;
+margin-right: 15px;
+
+
+}
+.info .infobox div p{
+    color:#000000;
+}
+.info .infobox div{
+    color:#000000;
+
+}
+.info .infobox div a{
+
+color:#000000;
+text-decoration:none;
+font-size: 1.1em;
+
+}
+.media{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.media li{
+    margin-right: 15px;
+    list-style: none;
+}
+.media li a {
+    color:#0097e6;
+font-size: 2em;
+
+}
+.media li a :hover{
+color: #000000;
+}
+
+.maap{
+    padding: 0;
+}
+.maap iframe{
+    width:100 ;
+    height:100 ;
+}
+ /* responsive */
+ @media (max-width:991px) {
+     
+body{
+    background: #0097e6;
+
+}
+ .box{
+     display: grid;
+     position: relative;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+     grid-template-areas: 
+     "form"
+     "info"
+     "maap"
+     ;
+ }   
+ .contactus{
+     padding: 10px;
+ } 
+ .maap{
+     min-height: 100px;
+     padding: 0;
+ }
+ .formbox .row{
+     display: flex;
+     flex-direction: column;
+     gap:0;
+
+ }
+ .contact{
+     padding: 30px;
+ }
+     .entrebox{
+         width: 100%;
+     }
+ }
+ 

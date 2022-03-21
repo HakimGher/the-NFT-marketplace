@@ -12,9 +12,9 @@
 </head>
 <body>
     <div id="sign_up">
-        <form action="register.php" method="post">
+        <form action="./register.php" method="post">
           <span>Register</span>
-          <?php include('errors.php'); ?>
+          <?php include('./errors.php'); ?>
           <div id="field">
             <label><i class="fas fa-user"></i></label>
             <input type="text" name="username" placeholder="Nom utilisateur" required />
@@ -41,7 +41,7 @@
         </form>
   
         <p> J'ai déja un compte?
-          <button><a href="login.php">Login</a></button>
+          <button><a href="./login.php">Login</a></button>
         </p>
       </div>
 </body>

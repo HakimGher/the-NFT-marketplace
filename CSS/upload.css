@@ -61,7 +61,10 @@ input::placeholder {
   font-family: 'Nunito', sans-serif;
   line-height: 1.2;
 }
-
+.chain{
+display: flex;
+justify-content: space-evenly;
+}
 /* responsive */
 
 @media screen and (max-width: 400px) {

@@ -17,7 +17,19 @@
         <form action="#" class="active">
         <input type="text"  id="title" placeholder="Titre" required>
         <input type="text"  id="price" placeholder="Prix" required>
+        <input type="number" min="0" max="10" placeholder="Quantité" required>
         <textarea id="description" style="resize: none;" placeholder="Description" required></textarea>
+        <div class="chain">
+            <div>
+                <input type="radio" id="ethereum" name="chain" value="ethereum">
+                <label for="html">Ethereum</label><br>
+            </div>
+            <div>
+                <input type="radio" id="bitcoin" name="chain" value="Bitcoin">
+                <label for="css">Bitcoin</label><br>
+            </div>
+            
+        </div>
         <div class="image">
             <input type="file" id="pic" accept="image/*" required>
         </div>

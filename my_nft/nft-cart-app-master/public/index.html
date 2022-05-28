@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Card</title>
+
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+    <div class="antialiased min-h-screen bg-neutral-dark-blue-bg">
+        <main class="py-16">
+            <div class="container flex justify-center">
+
+                <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-neutral-dark-blue-card cursor-pointer">
+                    <div class="relative flex justify-center items-center group">
+                        <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+
+                        <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
+                    </div>
+
+                    <div class="py-4 border-b border-neutral-dark-blue-line">
+                        <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                        <p class="mb-4 text-primary-soft-blue">Our Equilibrium collection promotes balance and calm.</p>
+                        <div class=" flex justify-between items-center">
+                            <div class="flex items-center space-x-2">
+                                <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                <span class="text-primary-cyan font-bold">0.041 ETH</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                <span class="text-primary-soft-blue text-sm">3 days left</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-2">
+                        <div class="flex items-center space-x-4">
+                            <img src="./assets/image-avatar.png" class="w-8 h-8 rounded-full border border-white" alt="">
+                            <p class="text-primary-soft-blue text-sm">Creation of <span class="text-white hover:text-primary-cyan cursor-pointer">Jules Wyvern</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

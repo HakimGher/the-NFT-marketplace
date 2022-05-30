@@ -11,21 +11,9 @@
   <script src="https://kit.fontawesome.com/1db09dea83.js" crossorigin="anonymous"></script>
 
 <script>
-  let i=0;
-  function Dropdown(){
-
-    if(i % 2 == 0){
-      document.getElementById('dropdown').style.display='block';
-      i=i+1;
-
-    }
-    else {
-      document.getElementById('dropdown').style.display='none';
-      i=i+1;
-    }
-
-
-  }
+function myfunction() {
+    console.log("hello world");
+}
 </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,6 +45,12 @@ scrollbar-width: none;
 .hide-scroll-bar::-webkit-scrollbar {
 display: none;
 }
+.grid-20{
+    grid-template-columns: repeat(5, minmax(20%, 1fr));
+    row-gap: 2rem;
+    
+
+}
   </style>
   <div class="w-full h-30vh bg-100">
   </div>
@@ -70,7 +64,7 @@ display: none;
   
   </div>
   <div style="position:sticky;top:0;background-color: black;"
-          class="py-6 flex flex-wrap overflow-x-scroll hide-scroll-bar -b-2 border-b-2 border-borderWhite border-solid header-border">
+          class="z-900 py-6 flex flex-wrap overflow-x-scroll hide-scroll-bar -b-2 border-b-2 border-borderWhite border-solid header-border">
           <div
             class="flex space-x-6 lg:ml-40 md:ml-20 w-1/2 m-auto justify-between text-300" >
             <div class="hover:text-white text-center flex px-8"><i class="fa-solid fa-paint-roller mr-2 text-xl "></i><a class="link text-2xl" href="">created</a></div>
@@ -81,156 +75,11 @@ display: none;
         </div>
   <!--select -->
 
-  <div class="md:w-90% mt-12 m-auto grid gap-6 grid-cols-5 mob:grid-cols-1 sm:grid-cols-2 aftab:grid-cols-3 w-10/12">
-                <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-                    <div class="relative flex justify-center items-center group">
-                        <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-                        <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
-                    </div>
-
-                    <div class="py-4 border-b border-neutral-dark-blue-line">
-                        <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
-                        <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
-                        <div class=" flex justify-between items-center">
-                            <div class="flex items-center space-x-2">
-                                <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
-                                <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <img src="./assets/icon-clock.svg" alt="clock-icon">
-                                <span class="text-white text-sm">3 days left</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-                  <div class="relative flex justify-center items-center group">
-                      <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-                      <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
-                  </div>
-
-                  <div class="py-4 border-b border-neutral-dark-blue-line">
-                      <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
-                      <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
-                      <div class=" flex justify-between items-center">
-                          <div class="flex items-center space-x-2">
-                              <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
-                              <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
-                          </div>
-                          <div class="flex items-center space-x-2">
-                              <img src="./assets/icon-clock.svg" alt="clock-icon">
-                              <span class="text-white text-sm">3 days left</span>
-                          </div>
-                      </div>
-                  </div>
-
-
-              </div>
-              <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-                <div class="relative flex justify-center items-center group">
-                    <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-                    <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
-                </div>
-
-                <div class="py-4 border-b border-neutral-dark-blue-line">
-                    <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
-                    <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
-                    <div class=" flex justify-between items-center">
-                        <div class="flex items-center space-x-2">
-                            <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
-                            <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <img src="./assets/icon-clock.svg" alt="clock-icon">
-                            <span class="text-white text-sm">3 days left</span>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-              <div class="relative flex justify-center items-center group">
-                  <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-                  <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
-              </div>
-
-              <div class="py-4 border-b border-neutral-dark-blue-line">
-                  <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
-                  <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
-                  <div class=" flex justify-between items-center">
-                      <div class="flex items-center space-x-2">
-                          <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
-                          <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
-                      </div>
-                      <div class="flex items-center space-x-2">
-                          <img src="./assets/icon-clock.svg" alt="clock-icon">
-                          <span class="text-white text-sm">3 days left</span>
-                      </div>
-                  </div>
-              </div>
-
-
-          </div>
-          <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-            <div class="relative flex justify-center items-center group">
-                <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-                <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
-            </div>
-
-            <div class="py-4 border-b border-neutral-dark-blue-line">
-                <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
-                <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
-                <div class=" flex justify-between items-center">
-                    <div class="flex items-center space-x-2">
-                        <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
-                        <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <img src="./assets/icon-clock.svg" alt="clock-icon">
-                        <span class="text-white text-sm">3 days left</span>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-          <div class="relative flex justify-center items-center group">
-              <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-              <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
-          </div>
-
-          <div class="py-4 border-b border-neutral-dark-blue-line">
-              <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
-              <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
-              <div class=" flex justify-between items-center">
-                  <div class="flex items-center space-x-2">
-                      <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
-                      <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
-                  </div>
-                  <div class="flex items-center space-x-2">
-                      <img src="./assets/icon-clock.svg" alt="clock-icon">
-                      <span class="text-white text-sm">3 days left</span>
-                  </div>
-              </div>
-          </div>
-
-
-      </div>
-      <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-        <div class="relative flex justify-center items-center group">
-            <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-            <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
+  <div class="md:w-90% mt-12 mob:mt-2 m-auto grid grid-cols-5 gap-y-4 mob:grid-cols-1 mob:w-full w-90%">
+    <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5 bg-400 cursor-pointer">
+        <div class="flex justify-center items-center group">
+            <img onclick="myfunction()" src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+            <i  class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
         </div>
 
         <div class="py-4 border-b border-neutral-dark-blue-line">
@@ -247,60 +96,353 @@ display: none;
                 </div>
             </div>
         </div>
-
-
-    </div>
-    <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-      <div class="relative flex justify-center items-center group">
-          <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-          <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
-      </div>
-
-      <div class="py-4 border-b border-neutral-dark-blue-line">
-          <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
-          <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
-          <div class=" flex justify-between items-center">
-              <div class="flex items-center space-x-2">
-                  <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
-                  <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
-              </div>
-              <div class="flex items-center space-x-2">
-                  <img src="./assets/icon-clock.svg" alt="clock-icon">
-                  <span class="text-white text-sm">3 days left</span>
-              </div>
+        <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+            <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+            </a><div>
+           <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+            </div>
           </div>
-      </div>
-
-
-  </div>
-  <div class="w-[300px] rounded-xl shadow-xl hover:shadow-2xl p-5 bg-400 cursor-pointer">
-    <div class="relative flex justify-center items-center group">
-        <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
-
-        <img src="./assets/icon-view.svg" class="absolute w-10 hidden group-hover:inline-block" alt="view-icon">
-    </div>
-
-    <div class="py-4 border-b border-neutral-dark-blue-line">
-        <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
-        <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
-        <div class=" flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
-                <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
-            </div>
-            <div class="flex items-center space-x-2">
-                <img src="./assets/icon-clock.svg" alt="clock-icon">
-                <span class="text-white text-sm">3 days left</span>
-            </div>
         </div>
-    </div>
-
-
-</div>
-    </div>
+          <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+            <div class=" flex justify-center items-center group">
+                <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+            </div>
     
-  </div>
-      
+            <div class="py-4 border-b border-neutral-dark-blue-line">
+                <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                <div class=" flex justify-between items-center">
+                    <div class="flex items-center space-x-2">
+                        <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                        <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="./assets/icon-clock.svg" alt="clock-icon">
+                        <span class="text-white text-sm">3 days left</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                </a><div>
+               <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                </div>
+              </div></div>
+              <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                <div class="flex justify-center items-center group">
+                    <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                    <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                </div>
+        
+                <div class="py-4 border-b border-neutral-dark-blue-line">
+                    <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                    <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                    <div class=" flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                            <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <img src="./assets/icon-clock.svg" alt="clock-icon">
+                            <span class="text-white text-sm">3 days left</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                    <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                    </a><div>
+                   <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                    </div>
+                  </div></div>
+                  <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                    <div class="flex justify-center items-center group">
+                        <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                        <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                    </div>
+            
+                    <div class="py-4 border-b border-neutral-dark-blue-line">
+                        <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                        <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                        <div class=" flex justify-between items-center">
+                            <div class="flex items-center space-x-2">
+                                <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                <span class="text-white text-sm">3 days left</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                        <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                        </a><div>
+                       <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                        </div>
+                      </div></div>
+                      <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                        <div class="flex justify-center items-center group">
+                            <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                            <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                        </div>
+                
+                        <div class="py-4 border-b border-neutral-dark-blue-line">
+                            <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                            <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                            <div class=" flex justify-between items-center">
+                                <div class="flex items-center space-x-2">
+                                    <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                    <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                    <span class="text-white text-sm">3 days left</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                            <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                            </a><div>
+                           <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                            </div>
+                          </div></div>
+                          <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                            <div class="flex justify-center items-center group">
+                                <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                            </div>
+                    
+                            <div class="py-4 border-b border-neutral-dark-blue-line">
+                                <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                <div class=" flex justify-between items-center">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                        <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                        <span class="text-white text-sm">3 days left</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                </a><div>
+                               <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                </div>
+                              </div></div>
+                              <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                                <div class="flex justify-center items-center group">
+                                    <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                    <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                                </div>
+                        
+                                <div class="py-4 border-b border-neutral-dark-blue-line">
+                                    <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                    <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                    <div class=" flex justify-between items-center">
+                                        <div class="flex items-center space-x-2">
+                                            <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                            <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                            <span class="text-white text-sm">3 days left</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                    <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                    </a><div>
+                                   <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                    </div>
+                                  </div></div>
+                                  <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                                    <div class="flex justify-center items-center group">
+                                        <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                        <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                                    </div>
+                            
+                                    <div class="py-4 border-b border-neutral-dark-blue-line">
+                                        <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                        <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                        <div class=" flex justify-between items-center">
+                                            <div class="flex items-center space-x-2">
+                                                <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                                <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                            </div>
+                                            <div class="flex items-center space-x-2">
+                                                <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                                <span class="text-white text-sm">3 days left</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                        <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                        </a><div>
+                                       <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                        </div>
+                                      </div></div>
+                                      <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                                        <div class="flex justify-center items-center group">
+                                            <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                            <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                                        </div>
+                                
+                                        <div class="py-4 border-b border-neutral-dark-blue-line">
+                                            <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                            <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                            <div class=" flex justify-between items-center">
+                                                <div class="flex items-center space-x-2">
+                                                    <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                                    <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                                </div>
+                                                <div class="flex items-center space-x-2">
+                                                    <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                                    <span class="text-white text-sm">3 days left</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                            <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                            </a><div>
+                                           <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                            </div>
+                                          </div></div>
+                                          <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                                            <div class="flex justify-center items-center group">
+                                                <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                                <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                                            </div>
+                                    
+                                            <div class="py-4 border-b border-neutral-dark-blue-line">
+                                                <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                                <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                                <div class=" flex justify-between items-center">
+                                                    <div class="flex items-center space-x-2">
+                                                        <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                                        <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                                        <span class="text-white text-sm">3 days left</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                                <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                                </a><div>
+                                               <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                                </div>
+                                              </div></div>
+                                              <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                                                <div class="flex justify-center items-center group">
+                                                    <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                                    <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                                                </div>
+                                        
+                                                <div class="py-4 border-b border-neutral-dark-blue-line">
+                                                    <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                                    <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                                    <div class=" flex justify-between items-center">
+                                                        <div class="flex items-center space-x-2">
+                                                            <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                                            <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                                            <span class="text-white text-sm">3 days left</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                                    <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                                    </a><div>
+                                                   <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                                    </div>
+                                                  </div></div>
+                                                  <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                                                    <div class="flex justify-center items-center group">
+                                                        <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                                        <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                                                    </div>
+                                            
+                                                    <div class="py-4 border-b border-neutral-dark-blue-line">
+                                                        <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                                        <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                                        <div class=" flex justify-between items-center">
+                                                            <div class="flex items-center space-x-2">
+                                                                <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                                                <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                                            </div>
+                                                            <div class="flex items-center space-x-2">
+                                                                <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                                                <span class="text-white text-sm">3 days left</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                                        <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                                        </a><div>
+                                                       <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                                        </div>
+                                                      </div></div>
+                                                      <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                                                        <div class="flex justify-center items-center group">
+                                                            <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                                            <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                                                        </div>
+                                                
+                                                        <div class="py-4 border-b border-neutral-dark-blue-line">
+                                                            <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                                            <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                                            <div class=" flex justify-between items-center">
+                                                                <div class="flex items-center space-x-2">
+                                                                    <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                                                    <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                                                </div>
+                                                                <div class="flex items-center space-x-2">
+                                                                    <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                                                    <span class="text-white text-sm">3 days left</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                                            <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                                            </a><div>
+                                                           <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                                            </div>
+                                                          </div></div>
+                                                          <div class="mob:mx-auto  w-[300px]  rounded-xl shadow-xl hover:shadow-2xl pt-5 px-5  bg-400 cursor-pointer">
+                                                            <div class="flex justify-center items-center group">
+                                                                <img src="./assets/image-equilibrium.jpg" class="group-hover:opacity-80 w-full h-64 rounded-lg" alt="card-image">
+                                                                <i class="fa-solid fa-pen absolute w-10 hidden group-hover:inline-block text-2xl text-white text-center" alt="view-icon"></i>
+                                                            </div>
+                                                    
+                                                            <div class="py-4 border-b border-neutral-dark-blue-line">
+                                                                <h1 class="mb-4 text-white hover:text-primary-cyan text-[18px] font-bold cursor-pointer">Equilibrium #3429</h1>
+                                                                <p class="mb-4 	text-300">Our Equilibrium collection promotes balance and calm.</p>
+                                                                <div class=" flex justify-between items-center">
+                                                                    <div class="flex items-center space-x-2">
+                                                                        <img src="./assets/icon-ethereum.svg" alt="ethereum-icon">
+                                                                        <span class="text-primary-cyan text-white font-bold">0.041 ETH</span>
+                                                                    </div>
+                                                                    <div class="flex items-center space-x-2">
+                                                                        <img src="./assets/icon-clock.svg" alt="clock-icon">
+                                                                        <span class="text-white text-sm">3 days left</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-300 link mx-auto flex justify-between w-90% py-1">
+                                                                <div class="py-1"><a href="#"><i class="fa-solid fa-trash-can text-xl"></i></div>
+                                                                </a><div>
+                                                               <a class="text-xl" href="#"><i class="fa-regular fa-heart mr-2"></i></a><a class="text-2xl">0</a>
+                                                                </div>
+                                                              </div></div>
+                                                            </div>
+                
+    
   </body>
   </html>

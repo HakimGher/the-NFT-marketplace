@@ -1,0 +1,58 @@
+
+<header class="sticky hide-scroll-bar z-900 ">
+
+  <nav class="border-b-2 border-borderWhite border-solid bg-black text-white header-border">
+   <div class="flex flex-wrap justify-between mob:justify-around  items-center mob:px-0 mob:py-4 px-16 py-2 sm:px-16  md:px-16">
+    <div class=" pt-2 mob:pt-0">
+      <a href="#" class="text-3xl 
+      basis-1/2 self-center whitespace-nowrap dark:text-white
+       hover:text-bleu text delay-150 xl:basis-auto leading-8 
+       mob:text-2xl  ">JinxArt</a>
+      <h6 class="text-2xl ml-8 mob:leading-6 mob:ml-6" 
+      style="font-family: 'Dancing Script'">marketpkace
+    </h6></div>
+
+    <!--  begin the search bar -->
+     <div class="flex md:hidden lg:hidden">
+      <div class="relative mr-3 xl:mr-0 xl:block md:hidden hidden" >
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+        </div>
+        <input type="text" id="email-adress-icon" class="text-xl leading-none block p-4 px-10 w-full text-gray-900 bg-gray-50 rounded-xl border border-gray-300 md:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+      </div> 
+     </div>
+    <!-- the end of the searching bar -->
+
+
+     <div class="hidden  w-full space-x-8 items-center ml:inline-block ml:w-auto ml:my-auto mob:pt-4 mob:space-x-0 text-center mob:border-t-2 mob:border-borderWhite mob:border-solid mob:header-border mob:mt-4 mob:space-y-3">
+       <a class=" nav_btn mob:text-3xl text-xl hover:text-bleu delay-150  " href="#">Home</a>
+       <a class=" nav_btn mob:text-3xl text-xl hover:text-bleu delay-150  " href="#">Produits</a>
+       <a class=" nav_btn mob:text-3xl text-xl hover:text-bleu delay-150 " href="#">Contact</a>
+       <a class=" nav_btn mob:text-3xl text-xl hover:text-bleu delay-150 " href="#">About</a>
+     </div>
+      <!-- added  -->
+      <div class=" flex space-x-2 ">
+        <a  href="" class=" hidden bg-white text-black text-2xl px-4 py-3
+        mob:py-2 mob:px-4  relative border border-white font-semibold tracking-wider 
+        overflow-hidden rounded ml:block ">Hakim</a>
+        <span class="hidden ml:block "><a class="fas fa-heart text-2xl bg-white p-3 text-black   hover:text-white hover:bg-bleu delay-150 " href="#"></a></span>
+        <span class="hidden ml:block "><a class="fas fa-sign-out text-2xl bg-white p-3 text-black   hover:text-white hover:bg-bleu delay-150 " href="#"></a></span>
+        <span class="ml:hidden block"><a onclick="ShowNavbar()" class="fas fa-bars text-2xl bg-white p-3 text-black  hover:text-white hover:bg-bleu delay-150 " href="#"></a></span>
+      </div>
+
+   </div>
+      <!-- resposive hidden navbar -->
+      <div style="transition: all 10s;" id="navShow" class="hidden w-full items-center  ml:my-auto pt-4 pb-4  text-center border-t-2 border-borderWhite border-solid header-border mt-2 space-y-3">
+        <a class="text-xl hover:text-bleu delay-150" href="#">Home</a>
+        <a class="text-xl hover:text-bleu delay-150" href="#">Produits</a>
+        <a class="text-xl hover:text-bleu delay-150" href="#">Contact</a>
+        <a class="text-xl hover:text-bleu delay-150" href="#">About</a>
+        <span class=""><a class="fas fa-sign-out text-2xl bg-white p-3 text-black   hover:text-white hover:bg-bleu delay-150 " href="#"></a></span>
+
+      </div>
+            <!-- end of resposive hidden navbar -->
+
+
+  </nav>
+
+</header>
